@@ -1,0 +1,59 @@
+/* education.css */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+  }
+  
+  #education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px;
+  }
+  
+  #education h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  #education div {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #education h3 {
+    font-size: 1.8em;
+    color: #34495e;
+    margin: 10px 0;
+  }
+  
+  #education p {
+    font-size: 1.2em;
+    color: #2c3e50;
+  }
+  
+  @media (max-width: 768px) {
+    #education {
+      padding: 20px;
+    }
+  
+    #education h2 {
+      font-size: 2em;
+    }
+  
+    #education h3 {
+      font-size: 1.5em;
+    }
+  
+    #education p {
+      font-size: 1em;
+    }
+  }
+  
