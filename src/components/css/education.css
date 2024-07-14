@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: left;
     padding: 50px 20px;
     background-color: #fff;
     color: #333;
@@ -20,17 +21,22 @@ body {
   #education h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    text-align: left;
     color: #2c3e50;
   }
-  
+  .college .school{
+    text-align: left;
+  }
   #education div {
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
+    /* text-align: center; */
   }
   
   #education h3 {
     font-size: 1.8em;
     color: #34495e;
+    text-align: left;
     margin: 10px 0;
   }
   
