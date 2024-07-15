@@ -5,18 +5,19 @@ body {
 }
 
 .projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 50px 20px;
   background-color: #fff;
   color: #333;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   margin: 20px;
+  text-align: left;
 }
 
 #projects h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 2.5em;
   margin-bottom: 20px;
   color: #2c3e50;
@@ -24,8 +25,7 @@ body {
 
 .projects div {
   margin-bottom: 40px;
-  text-align: left;
-  max-width: 800px;
+  max-width: 1200px;
 }
 
 #projects h3 {
@@ -33,14 +33,17 @@ body {
   color: #34495e;
   margin: 10px 0;
   cursor: pointer; /* Added cursor pointer for better UX */
-  text-align: left; /* Ensures left alignment */
+  margin-left: 221px;/* Ensures left alignment */
 }
 
 #projects p {
+
+  color: #2c3e50;
+  margin-left: 221px;
   font-size: 1.2em;
   line-height: 1.6;
   text-align: justify;
-  color: #2c3e50;
+  
 }
 
 @media (max-width: 768px) {
@@ -53,6 +56,7 @@ body {
   }
 
   #projects h3 {
+    text-align: left;
     font-size: 1.5em;
   }
 

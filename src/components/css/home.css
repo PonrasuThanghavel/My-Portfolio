@@ -29,10 +29,10 @@ body {
 
 .image-container {
   width: 350px;
-  height:600px;
+  height: 600px;
   overflow: hidden;
   border-radius: 50%;
-  margin-right: 200px;
+  margin-right: 50px;
 }
 
 .my-image {
@@ -63,6 +63,14 @@ body {
   margin: 0.2em 0;
   font-weight: 300;
   color: var(--light-color);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cursor {
+  display: inline-block;
+  width: 0.15em;
+  background-color: var(--light-color);
 }
 
 .home p {
