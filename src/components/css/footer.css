@@ -1,0 +1,45 @@
+/* footer.css */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --light-color: #7f8c8d;
+    --background-color: #f4f4f9;
+    --white-color: #fff;
+    --text-color: #333;
+  }
+  
+  .footer {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-info {
+    margin: 10px 0;
+  }
+  
+  .footer-info p {
+    margin: 5px 0;
+    font-size: 1.2em;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      padding: 15px 0;
+    }
+  
+    .footer-info p {
+      font-size: 1em;
+    }
+  }
+  

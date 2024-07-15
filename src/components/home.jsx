@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './css/home.css';
 import myImage from '../assets/images/ponrasu.jpg'; // Importing the image
+import resume from '../assets/pdf/resume.pdf'; // Importing the resume
 
 const designations = [
   "Computer Science Engineer",
-  "Machine learning Engineer",
+  "Machine Learning Engineer",
   "Data Engineer",
   "AI Enthusiast"
 ];
@@ -48,6 +49,7 @@ const Home = () => {
         <h1>Hello,</h1>
         <h2>I'm Ponrasu Thangavel</h2>
         <h3>{currentDesignation}<span className="cursor">{blink ? "|" : " "}</span></h3>
+        <a href={resume} download="Ponrasu_Thangavel_Resume.pdf" className="resume-button">Download Resume</a>
       </div>
     </section>
   );

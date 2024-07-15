@@ -80,6 +80,22 @@ body {
   color: var(--primary-color);
 }
 
+.resume-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.resume-button:hover {
+  background-color: var(--primary-color);
+}
+
 @media (max-width: 768px) {
   .home {
     flex-direction: column;
@@ -104,6 +120,10 @@ body {
   }
 
   .home p {
+    font-size: 1em;
+  }
+
+  .resume-button {
     font-size: 1em;
   }
 }
