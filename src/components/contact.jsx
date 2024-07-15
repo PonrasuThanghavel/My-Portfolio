@@ -59,7 +59,7 @@ const Contact = () => {
           <div className="social-links">
             <a href="https://www.linkedin.com/in/ponrasuthanghavel/" target="_blank" rel="noopener noreferrer"><FaLinkedin /> LinkedIn</a>
             <a href="https://github.com/PonrasuThanghavel" target="_blank" rel="noopener noreferrer"><FaGithub /> GitHub</a>
-            <a href="https://www.instagram.com/your-instagram-profile" target="_blank" rel="noopener noreferrer"><FaInstagram /> Instagram</a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><FaInstagram /> Instagram</a>
           </div>
           <div className="personal-info">
             <p>Email: ponrasuthanghavel@gmail.com</p>

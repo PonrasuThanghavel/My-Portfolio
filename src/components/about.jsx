@@ -14,9 +14,7 @@ const About = () => {
         <br /><br />
         Beyond my technical skills, I am a firm believer in continuous learning and professional development. I regularly participate in workshops, webinars, and conferences to stay updated with the latest advancements in the field. This commitment to lifelong learning ensures that I remain at the forefront of technological innovation and can bring the best practices to my work.
         <br /><br />
-        Collaboration and teamwork are integral to my professional ethos. I enjoy working with diverse teams, sharing knowledge, and learning from others. This collaborative spirit has not only enriched my own understanding but has also contributed to the success of the projects I have been a part of.
-        <br /><br />
-        Looking ahead, I am excited about the endless possibilities that the future holds in the realm of technology. I am particularly enthusiastic about exploring the intersections of AI, machine learning, and data science to create solutions that drive meaningful change. My ultimate goal is to leverage my skills and experiences to contribute to projects that make a positive impact on society and the world at large.
+        Collaboration and teamwork are integral to my professional ethos. I enjoy working with diverse teams, sharing knowledge, and learning from others. This collaborative spirit has not only enriched my own understanding but has also contributed to the success of the projects I have been a part of. Looking ahead, I am excited about the endless possibilities that the future holds in the realm of technology. I am particularly enthusiastic about exploring the intersections of AI, machine learning, and data science to create solutions that drive meaningful change. My ultimate goal is to leverage my skills and experiences to contribute to projects that make a positive impact on society and the world at large.
       </p>
     </section>
   );

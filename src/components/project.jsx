@@ -2,19 +2,29 @@ import React, { useState } from 'react';
 import './css/project.css';
 
 const Projects = () => {
-  const [visibleProject, setVisibleProject] = useState(null);
+  const [expandedProjects, setExpandedProjects] = useState([]);
 
   const toggleProject = (index) => {
-    setVisibleProject(visibleProject === index ? null : index);
+    if (expandedProjects.includes(index)) {
+      setExpandedProjects(expandedProjects.filter(item => item !== index));
+    } else {
+      setExpandedProjects([...expandedProjects, index]);
+    }
+  };
+
+  const isProjectExpanded = (index) => {
+    return expandedProjects.includes(index);
   };
 
   return (
     <section className='projects' id="projects">
       <h2>My Projects</h2>
       {projectsData.map((project, index) => (
-        <div key={index} className="project-item">
-          <h3 onClick={() => toggleProject(index)}>{project.title}</h3>
-          {visibleProject === index && (
+        <div key={index} className="project-item" onClick={() => toggleProject(index)}>
+          <h3>
+            {project.title} {isProjectExpanded(index) ? '▲' : '▼'}
+          </h3>
+          {isProjectExpanded(index) && (
             <div className="project-details">
               <p><strong>Description:</strong> {project.description}</p>
               <p><strong>Role:</strong> {project.role}</p>
@@ -51,7 +61,7 @@ const projectsData = [
     title: 'Stats on view',
     description: 'Stats on View is a comprehensive web application designed to streamline the agricultural market by connecting farmers directly with shop owners. Built using the MERN stack (MongoDB, Express.js, React.js, Node.js), this platform enables efficient management and visualization of agricultural data.',
     role: 'Web Developer',
-    responsibilities: ' Web  development and deployment,Data Collection',
+    responsibilities: 'Web development and deployment, Data Collection',
     duration: '2 months',
     features: [
       'Seller Markets Database',

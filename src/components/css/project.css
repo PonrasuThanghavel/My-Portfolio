@@ -1,3 +1,5 @@
+/* project.css */
+
 :root {
   --primary-color: #2c3e50;
   --secondary-color: #34495e;
@@ -16,11 +18,11 @@ body {
 #projects {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: left;
-  padding: 50px;
-  background-color: var(--white-color);
-  color: var(--text-color);
+  align-items: left;
+  justify-content: left;
+  padding: 50px 20px;
+  background-color: #fff;
+  color: #333;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   margin: 20px;
@@ -36,13 +38,14 @@ body {
   margin-bottom: 20px;
   text-align: left;
   width: 100%;
-  max-width: 800px;
 }
 
 #projects h3 {
   font-size: 1.8em;
   color: var(--secondary-color);
   margin: 10px 0;
+  margin-left: 20px;
+  cursor: pointer; /* Add cursor pointer */
 }
 
 #projects p {
@@ -50,12 +53,16 @@ body {
   color: var(--primary-color);
   line-height: 1.6;
   margin: 5px 0;
+  margin-left: 40px;
+  text-align: justify;
 }
-#projects li{
+
+#projects li {
   font-size: 1.2em;
   color: var(--primary-color);
   line-height: 1.6;
   margin: 5px 0;
+  margin-left: 60px;
 }
 
 @media (max-width: 768px) {

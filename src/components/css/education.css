@@ -16,19 +16,19 @@ body {
 #education {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: left;
-  padding: 50px;
-  background-color: var(--white-color);
-  color: var(--text-color);
+  align-items: left;
+  justify-content: left;
+  padding: 50px 20px;
+  background-color: #fff;
+  color: #333;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   margin: 20px;
+
 }
 
 #education h2 {
   font-size: 2.5em;
-  margin-bottom: 20px;
   color: var(--primary-color);
 }
 
@@ -41,15 +41,16 @@ body {
 
 #education h3 {
   font-size: 1.8em;
+  margin: 10px 0 0 20px;
   color: var(--secondary-color);
-  margin: 10px 0;
+  /* margin: 10px 0; */
 }
 
 #education p {
   font-size: 1.2em;
   color: var(--primary-color);
   line-height: 1.6;
-  margin: 5px 0;
+  margin: 0 0 0 20px;
 }
 
 @media (max-width: 768px) {
