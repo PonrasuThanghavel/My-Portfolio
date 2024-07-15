@@ -5,7 +5,7 @@ import Home from './components/home';
 import About from './components/about';
 import Education from './components/education';
 import Projects from './components/project';
-
+import Contact from './components/contact';
 
 const App = () => {
   return (
@@ -15,6 +15,7 @@ const App = () => {
       <About />
       <Education />
       <Projects />
+      <Contact/>
     </div>
   );
 }
