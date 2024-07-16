@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './css/home.css';
-import myImage from '../assets/images/ponrasu.jpg'; // Importing the image
-import resume from '../assets/pdf/resume.pdf'; // Importing the resume
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLink } from '@fortawesome/free-solid-svg-icons'; // Import the specific icon
+import myImage from '../assets/images/ponrasu.jpg'; 
+import resume from '../assets/pdf/resume.pdf'; 
 
 const designations = [
   "Computer Science Engineer",
@@ -49,7 +51,12 @@ const Home = () => {
         <h1>Hello,</h1>
         <h2>I'm Ponrasu Thangavel</h2>
         <h3>{currentDesignation}<span className="cursor">{blink ? "|" : " "}</span></h3>
-        <a href={resume} download="Ponrasu_Thangavel_Resume.pdf" className="resume-button">Download Resume</a>
+        <div className="buttons-container">
+          <a href={resume} download="Ponrasu_Thangavel_Resume.pdf" className="resume-button">Download Resume</a>
+          <a href="https://drive.google.com/file/d/15nsB-_Ikfsuz_JR9MtWqqk5-i756USMW/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="gdrive-link">
+            <FontAwesomeIcon icon={faLink} style={{ color: "#74C0FC" }} />
+          </a>
+        </div>
       </div>
     </section>
   );

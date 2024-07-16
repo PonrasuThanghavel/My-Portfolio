@@ -25,6 +25,9 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   margin: 20px;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
 }
 
 .image-container {
@@ -80,9 +83,13 @@ body {
   color: var(--primary-color);
 }
 
-.resume-button {
-  display: inline-block;
+.buttons-container {
+  display: flex;
+  align-items: center;
   margin-top: 20px;
+}
+
+.resume-button {
   padding: 10px 20px;
   background-color: var(--secondary-color);
   color: var(--white-color);
@@ -94,6 +101,18 @@ body {
 
 .resume-button:hover {
   background-color: var(--primary-color);
+}
+
+.gdrive-link {
+  margin-left: 20px;
+  font-size: 1.8em;
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.gdrive-link:hover {
+  color: var(--primary-color);
 }
 
 @media (max-width: 768px) {
@@ -125,5 +144,15 @@ body {
 
   .resume-button {
     font-size: 1em;
+  }
+
+  .buttons-container {
+    flex-direction: column;
+  }
+
+  .gdrive-link {
+    margin-left: 0;
+    margin-top: 10px;
+    font-size: 1.5em;
   }
 }
